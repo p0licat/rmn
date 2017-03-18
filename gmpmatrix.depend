@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1489834504 source:/home/timi/Documents/Code/CPB/gmpmatrix/src/gmp_matrix.cpp
+	"../include/gmp_matrix.h"
+
+1489834476 /home/timi/Documents/Code/CPB/gmpmatrix/include/gmp_matrix.h
+	<stdio.h>
+	<fstream>
+	<iostream>
+	<vector>
+	<mpfr.h>
+	"mpreal.h"
+
+1479344148 /home/timi/Documents/Code/CPB/gmpmatrix/include/mpreal.h
+	<string>
+	<iostream>
+	<sstream>
+	<stdexcept>
+	<cfloat>
+	<cmath>
+	<cstring>
+	<limits>
+	<complex>
+	<algorithm>
+	<stdint.h>
+	<mpfr.h>
+	<cstdlib>
+
+1489834524 source:/home/timi/Documents/Code/CPB/gmpmatrix/src/main.cpp
+	<iostream>
+	<string>
+	"../include/gmp_matrix.h"
+	"../tests/tests.h"
+
+1489834882 /home/timi/Documents/Code/CPB/gmpmatrix/tests/tests.h
+	<iostream>
+	<string>
+	"../include/gmp_matrix.h"
+
+1489834849 source:/home/timi/Documents/Code/CPB/gmpmatrix/tests/tests.cpp
+	"tests.h"
+
