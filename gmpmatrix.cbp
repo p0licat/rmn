@@ -13,9 +13,14 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add option="-lgmp" />
+					<Add option="-lmpfr" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add option="-lgmp" />
+					<Add option="-lmpfr" />
 				</Linker>
 			</Target>
 		</Build>
@@ -23,7 +28,38 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="include/gmp_matrix.h" />
+		<Unit filename="include/mpreal.h" />
+		<Unit filename="outputs/result.dat" />
+		<Unit filename="outputs/reverse_result.out" />
+		<Unit filename="outputs/tests_output.dat" />
+		<Unit filename="resources/descent/CadereN010.dat" />
+		<Unit filename="resources/descent/CadereN020.dat" />
+		<Unit filename="resources/descent/CadereN050.dat" />
+		<Unit filename="resources/descent/CadereN100.dat" />
+		<Unit filename="resources/descent/CadereN500.dat" />
+		<Unit filename="resources/tests/mat1000by1000.txt" />
+		<Unit filename="resources/tests/mat1000by1000inverse.txt" />
+		<Unit filename="resources/tests/mat100by100.txt" />
+		<Unit filename="resources/tests/mat100by100inverse.txt" />
+		<Unit filename="resources/tests/mat10by10.txt" />
+		<Unit filename="resources/tests/mat10by10inverse.txt" />
+		<Unit filename="resources/tests/mat2by2.txt" />
+		<Unit filename="resources/tests/mat2by2inverse.txt" />
+		<Unit filename="resources/tests/mat3by3.txt" />
+		<Unit filename="resources/tests/mat3by3_2.txt" />
+		<Unit filename="resources/tests/mat3by3_2inverse.txt" />
+		<Unit filename="resources/tests/mat3by3_3.txt" />
+		<Unit filename="resources/tests/mat3by3_3inverse.txt" />
+		<Unit filename="resources/tests/mat3by3inverse.txt" />
+		<Unit filename="resources/tests/mat4by4.txt" />
+		<Unit filename="resources/tests/mat4by4inverse.txt" />
+		<Unit filename="resources/tests/mat5by5.txt" />
+		<Unit filename="resources/tests/mat5by5inverse.txt" />
+		<Unit filename="src/gmp_matrix.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="tests/tests.cpp" />
+		<Unit filename="tests/tests.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

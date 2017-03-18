@@ -16,7 +16,8 @@
 //
 
 // uncomment any of these ( at most one ) to run different kinds of test routines
-#define COMPREHENSIVE
+//#define EXTREME
+//#define COMPREHENSIVE
 #define QUICK
 
 #include "../include/gmp_matrix.h" // uses gmp_matrix

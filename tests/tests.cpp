@@ -213,20 +213,94 @@ bool test_func::test_n_by_n_ident(const int& n, const int& decimals, const std::
 */
 bool test_func::runTests()
 {
-#ifdef QUICK
+#ifdef QUICK // QUICK
+
     // compare with matlab
+    if ( test_n_by_n(2, "../resources/tests/mat2by2.txt", "../resources/tests/mat2by2inverse.txt", "../outputs/tests_output.dat" ) == false )
+    {
+        std::cout << "2by2 failed.\n";
+        return false;
+    }
+
+    if ( test_n_by_n_ident(2, 300, "../resources/tests/mat2by2.txt", "../outputs/tests_output.dat") == false )
+    {
+        std::cout << "Identity test 2by2 failed.\n";
+        return false;
+    }
+
     if ( test_n_by_n(3, "../resources/tests/mat3by3.txt", "../resources/tests/mat3by3inverse.txt", "../outputs/tests_output.dat") == false )
     {
-        std::cout << "3by3 failed\n";
+        std::cout << "3by3 failed.\n";
+        return false;
+    }
+
+    if ( test_n_by_n_ident(3, 300, "../resources/tests/mat3by3.txt", "../outputs/tests_output.dat") == false )
+    {
+        std::cout << "Identity test 3by3 failed.\n";
+        return false;
+    }
+
+    if ( test_n_by_n(3, "../resources/tests/mat3by3_2.txt", "../resources/tests/mat3by3_2inverse.txt", "../outputs/tests_output.dat" ) == false )
+    {
+        std::cout << "3by3_2 failed.\n";
+        return false;
+    }
+
+    if ( test_n_by_n_ident(3, 300, "../resources/tests/mat3by3_2.txt", "../outputs/tests_output.dat") == false )
+    {
+        std::cout << "Identity test 3by3_2 failed.\n";
+        return false;
+    }
+
+    if ( test_n_by_n(3, "../resources/tests/mat3by3_3.txt", "../resources/tests/mat3by3_3inverse.txt", "../outputs/tests_output.dat" ) == false )
+    {
+        std::cout << "3by3_3 failed.\n";
+        return false;
+    }
+
+    if ( test_n_by_n_ident(3, 300, "../resources/tests/mat3by3_3.txt", "../outputs/tests_output.dat") == false )
+    {
+        std::cout << "Identity test 3by3_3 failed.\n";
         return false;
     }
 
     if ( test_n_by_n(4, "../resources/tests/mat4by4.txt", "../resources/tests/mat4by4inverse.txt", "../outputs/tests_output.dat") == false )
     {
-        std::cout << "4 by 4 failed\n";
+        std::cout << "4by4 failed\n";
         return false;
     }
-    #ifdef COMPREHENSIVE
+
+    if ( test_n_by_n_ident(4, 300, "../resources/tests/mat4by4.txt", "../outputs/tests_output.dat") == false )
+    {
+        std::cout << "Identity test 4by4 failed.\n";
+        return false;
+    }
+
+    if ( test_n_by_n(5, "../resources/tests/mat5by5.txt", "../resources/tests/mat5by5inverse.txt", "../outputs/tests_output.dat" ) == false )
+    {
+        std::cout << "5by5 failed.\n";
+        return false;
+    }
+
+    if ( test_n_by_n_ident(5, 300, "../resources/tests/mat5by5.txt", "../outputs/tests_output.dat") == false )
+    {
+        std::cout << "Identity test 10by10 failed.\n";
+        return false;
+    }
+
+    if ( test_n_by_n(10, "../resources/tests/mat10by10.txt", "../resources/tests/mat10by10inverse.txt", "../outputs/tests_output.dat" ) == false )
+    {
+        std::cout << "10by10 failed.\n";
+        return false;
+    }
+
+    if ( test_n_by_n_ident(10, 300, "../resources/tests/mat10by10.txt", "../outputs/tests_output.dat") == false )
+    {
+        std::cout << "Identity test 10by10 failed.\n";
+        return false;
+    }
+
+    #ifdef COMPREHENSIVE // COMPREHENSIVE
     // compare with matlab
     if ( test_n_by_n(100, "../resources/tests/mat100by100.txt", "../resources/tests/mat100by100inverse.txt", "../outputs/tests_output.dat") == false )
     {
@@ -240,9 +314,13 @@ bool test_func::runTests()
         std::cout << "Identity test 100*100 failed.\n";
         return false;
     }
-    #endif
+
+    #ifdef EXTREME // EXTREME
+    #endif // EXTREME
+
+    #endif // COMPREHENSIVE
     std::cout << "All tests ran!\n";
 
-#endif
+#endif // QUICK
     return true;
 }

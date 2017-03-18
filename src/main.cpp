@@ -8,6 +8,7 @@
 //
 #include "../include/gmp_matrix.h"
 #include "../tests/tests.h"
+#include "../include/nmr_data.h"
 using namespace std;
 
 //#define NO_TESTS                  // comment to run tests
@@ -208,7 +209,7 @@ int main()
         return 0;
     }
 */
-    //Solve(10);
+    NMR_DATA::GenerateMagnetizationMatrix(20);
 
     return 0;
 }
