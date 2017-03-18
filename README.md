@@ -13,7 +13,7 @@ Ele necesita compilate local si instructiunile pentru fiecare le gasiti pe site-
 2. MPFR
 ```
 
-Proiectul de asemenea foloseste un wrapper pentru clasa MPFR scris de [http://www.holoborodko.com/pavel/mpfr/](Pavel Holoborodko), Open-Source sub licenta GNU, care este inclus si nu necesita instalare.
+Proiectul de asemenea foloseste un wrapper pentru clasa MPFR scris de [Pavel Holoborodko](http://www.holoborodko.com/pavel/mpfr/), Open-Source sub licenta GNU, care este inclus si nu necesita instalare.
 
 ## Utilizare
 
