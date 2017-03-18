@@ -1,0 +1,7 @@
+# Created by Octave 4.0.0, Thu Nov 10 21:21:58 2016 EET <septimiu@septimiu-desktop>
+# name: A
+# type: matrix
+# rows: 2
+# columns: 2
+ 0.5048216095074695 0.6156808293852343
+ 0.5940557141840206 0.6086794492590933
