@@ -21,9 +21,6 @@ Momentan programul are implementata o clasa functionala GmpMatrix, care aloca di
 
 Compilarea si executia proiectului in aceasta versiune lanseaza testele.
 
-## Autori
-
-* **Septimiu Bodica**
 
 
 
